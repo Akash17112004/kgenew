@@ -182,6 +182,20 @@
   };
 
   // Initialize all carousels
+  $('.team-carousel').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  responsive: {
+    0:   { items: 1 },
+    576: { items: 2 },
+    992: { items: 3 }
+  }
+});
+
   const initCarousels = () => {
     owlCarouselConfig($testimonialOneCarousel, {
       loop: true,
