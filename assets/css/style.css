@@ -2566,6 +2566,185 @@ ul {
 .carousel-dot-style.owl-carousel .owl-dots .owl-dot span {
   display: none;
 }
+/* Top Bar */
+.top-bar {
+  font-size: .9rem;
+}
+.top-bar a {
+  color: #555;
+  text-decoration: none;
+  transition: color .2s;
+}
+.top-bar a:hover {
+  color: #007bff;
+}
+
+/* Main Navbar */
+.site-header .navbar {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.site-header .navbar-brand img {
+  max-height: 40px;
+}
+.site-header .nav-link {
+  margin-left: 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: color .2s;
+}
+.site-header .nav-item.active .nav-link,
+.site-header .nav-link:hover {
+  color: #007bff;
+}
+/* Footer logo sizing */
+.footer-logo img {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .footer-logo img {
+    margin: 0; /* remove auto on desktop so it aligns left in its column */
+  }
+}
+
+/* Footer headings */
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+/* Footer links */
+.footer-links li {
+  margin-bottom: .5rem;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Footer social icons */
+.footer-social a {
+  color: #ccc;
+  font-size: 1.25rem;
+  transition: color .2s;
+}
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Footer bottom */
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+.footer-bottom {
+  font-size: .875rem;
+  color: #777;
+}
+/* ===== Header Overrides ===== */
+
+/* Top Bar */
+.top-bar {
+  font-size: .9rem;
+}
+.top-bar__text {
+  color: #555;
+}
+.top-bar__link {
+  margin-left: 1rem;
+  color: #555;
+  text-decoration: none;
+  transition: color .2s;
+}
+.top-bar__link:hover {
+  color: #007bff;
+}
+
+/* Main Navbar */
+.site-header .navbar {
+  padding: 0;
+}
+.site-header .navbar-brand img {
+  max-height: 40px;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav .nav-link {
+  padding: .5rem 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: color .2s;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+/* Add left margin to every nav-item except the first */
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 1.5rem;  /* adjust this value to taste */
+}
+
+/* (Optional) Tweak the link padding for a larger click area */
+.navbar-nav .nav-link {
+  padding: .5rem .75rem;
+}
+/* Brand‑colored header */
+.site-header--brand {
+  background-color: #0056b3;  /* your primary brand blue */
+}
+
+/* Top Bar tweaks */
+.site-header--brand .top-bar {
+  background-color: #004494;  /* slightly darker blue */
+  border-bottom: none;
+  padding: .5rem 0;
+}
+.site-header--brand .top-bar__link,
+.site-header--brand .top-bar__text {
+  color: #fff;
+}
+.site-header--brand .top-bar__link:hover {
+  color: #ffd700;             /* gold accent on hover */
+}
+
+/* Main Nav tweaks */
+.site-header--brand .navbar {
+  background-color: #0056b3;
+  padding: .75rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.site-header--brand .navbar-brand img {
+  filter: brightness(0) invert(1); /* ensure white/logo visibility */
+}
+.site-header--brand .nav-link {
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  padding: .5rem 1rem;
+  transition: color .2s, background .2s;
+  border-radius: .25rem;
+}
+.site-header--brand .nav-link:hover,
+.site-header--brand .nav-item.active .nav-link {
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+/* Mobile toggle (hamburger) */
+.site-header--brand .navbar-toggler {
+  border-color: rgba(255,255,255,0.7);
+}
+.site-header--brand .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 
 

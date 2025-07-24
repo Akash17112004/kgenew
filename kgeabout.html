@@ -78,6 +78,47 @@
     <div></div>
     <div></div>
 </div>
+<!-- ===== HEADER ===== -->
+<header class="site-header site-header--brand">
+  <!-- Top Bar -->
+  <div class="top-bar bg-light py-2 border-bottom">
+    <div class="container d-flex justify-content-end align-items-center">
+      <a href="https://www.nasscom.in/" target="_blank" class="mr-3">
+        <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/nassccom-logo.png" alt="Nasscom Member" height="24">
+      </a>
+      <a href="https://www.kgetechnologies.com/Internship" class="text-secondary">Internship</a>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/KgeMain.png" alt="KGE Technologies" height="40">
+      </a>
+      <!-- Mobile toggle -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#mainNav" aria-controls="mainNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav links -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.kgetechnologies.com/services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.kgetechnologies.com/Marketing">Marketing</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.kgetechnologies.com/Development">Development</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.kgetechnologies.com/Internship">Internship</a></li>
+          <li class="nav-item active"><a class="nav-link" href="kgeabout.html">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.kgetechnologies.com/ReachUs">Contact-us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 <div class="xs-sidebar-group info-group info-sidebar">
         <div class="xs-overlay xs-bg-black"></div>
         <div class="xs-sidebar-widget">
@@ -135,20 +176,26 @@
 
   <!-- Page Header -->
    
-<section class="page-header position-relative text-center text-white" 
-         style="padding: 30px 0; background: url('https://www.kgetechnologies.com/images/bg-page-header.jpg') no-repeat center/cover;">
-  <!-- semi‑transparent overlay -->
-  <div class="page-header__overlay position-absolute w-100 h-100" 
-       style="top:0;left:0;background:rgba(0,0,0,0.5);"></div>
-
-  <div class="container position-relative" style="z-index: 2;">
-    <h2 class="page-header__title mb-3">
-      Professional<br/>
-      Team<br/>
-      Members
-    </h2>
-  </div>
-</section>
+<section class="page-header position-relative text-center text-white"
+             style="padding:20px 0; background:url('https://www.kgetechnologies.com/images/bg-page-header.jpg') no-repeat center/cover;">
+      <div class="page-header__overlay position-absolute w-100 h-100"
+           style="top:0; left:0; background:rgba(0,0,0,0.5);"></div>
+      <div class="container position-relative" style="z-index:2;">
+        <h2 class="page-header__title mb-3">
+          Professional<br/>
+          Team<br/>
+          Members
+        </h2>
+        <p class="page-header__subtitle">
+          If we had a ‘secret sauce’ it would be our awesome people.
+        </p>
+        <ul class="thm-breadcrumb list-unstyled d-inline-block mt-3">
+          <li class="d-inline"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="d-inline px-2"><span class="icon-right-arrow-1"></span></li>
+          <li class="d-inline">About Us</li>
+        </ul>
+      </div>
+    </section>
 
   <!-- Optional semi‑transparent overlay -->
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5);"></div>
@@ -156,27 +203,21 @@
 
   <!-- Team Section (replacing the default Team Two) -->
       <div class="col text-center">
-<section class="team-two py-5">
-            <div class="team-two__bg-shape float-bob-y"
-                style="background-image: url(assets/images/shapes/team-two-bg-shape.png);">
-            </div>
-            <div class="team-two__shape-1"></div>
-            
-                <div class="row mb-4">
-                    <div class="col-xl-5">
-                        <div class="team-two__left">
-                            
-                                <div class="section-title__tagline-box">
-                                  <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 m-b35 text-center">
-                            <div class="ot-heading">
-                                    <span class="section-title__tagline">Our Core Team</span>
-                                    
-                                </div>
-                                <h2 class="section-title__title title-animation">Meet the People <span>Behind
-                                    </span><br><span>KGE Technologies</span>
-                                    </h2>
+<section class="team-two">
+  <div class="team-two__bg-shape" style="background-image:url('assets/images/shapes/team-two-bg-shape.png')"></div>
+  <div class="container">
+    <!-- header row -->
+    <!-- team grid row -->
+  </div>
+            <section class="team-two py-3">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <span class="section-tagline">Our Core Team</span>
+            <h2 class="section-title__title title-animation">
+              Meet the People Behind<span></span><br/>
+              <span>KGE Technologies</span>
+            </h2>
                             </div>
                             <p class="team-two__text">Our people are our greatest asset. <br>Get to know the experts driving
                                 
@@ -184,77 +225,60 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-7">
-                        <div class="team-two__right">
-                            <div class="team-two__carousel owl-theme owl-carousel">
-                                <!--Team Two Single Start-->
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-xs-12 m-b55">
-                                        <div class="team-wrap">
-                                            <div class="team-thumb">
-                                                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/vikash.svg" alt="Vikash" class="img-fluid rounded-circle">
-                                            </div>
-                              
-                                            <div class="team-info">
-                                                <h3><a href="team-details.html">Vikash</a></h3>
-                                                <p>Sr. Architect</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Team Two Single End-->
-                                <!--Team Two Single Start-->
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-3 text-center mb-4">
-                                        <div class="team-two__img-box">
-                                            <div class="team-two__img">
-                                                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/Yosuva.jpg" alt="Yosuva" class="img-fluid rounded-circle">
-                                            </div>
-                                           
-                                            <div class="team-info">
-                                                <h3><a href="team-details.html">Yosuva</a></h3>
-                                                <p>Tester Engineer</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Team Two Single End-->
-                                <!--Team Two Single Start-->
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-3 text-center mb-4">
-                                        <div class="team-two__img-box">
-                                            <div class="team-two__img">
-                                                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/mem4-1.jpg" alt="Devi" class="img-fluid rounded-circle">
-                                            </div>
-                                            
-                                            <div class="team-info">
-                                                <h3><a href="team-details.html">Devi</a></h3>
-                                                <p>HR & Finance</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                    <div class="col-sm-6 col-md-3 text-center mb-4">
-                                        <div class="team-two__img-box">
-                                            <div class="team-two__img">
-                                                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/mem5-1.jpg" alt="Tamil Selvi" class="img-fluid rounded-circle">
-                                            </div>
-                                           
-                                            <div class="team-info">
-                                                <h3><a href="team-details.html">Tamil Selvi</a></h3>
-                                                <p>HR & Finance</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                </div>
-                                <!--Team Two Single End-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="row">
+                        
+          <!-- Vikash -->
+           <!-- Vikash -->
+          <div class="col-sm-6 col-md-3 text-center mb-4">
+            <div class="team-member">
+              <div class="member-img mb-3">
+                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/vikash.svg"
+                     alt="Vikash"
+                     class="img-fluid rounded-circle">
+              </div>
+              <h4 class="member-name">Vikash</h4>
+              <p class="member-role">Sr. Architect</p>
             </div>
-        </section>
+          </div>
+          <!-- Yosuva -->
+          <div class="col-sm-6 col-md-3 text-center mb-4">
+            <div class="team-member">
+              <div class="member-img mb-3">
+                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/Yosuva.jpg"
+                     alt="Yosuva"
+                     class="img-fluid rounded-circle">
+              </div>
+              <h4 class="member-name">Yosuva</h4>
+              <p class="member-role">Tester Engineer</p>
+            </div>
+          </div>
+          <!-- Devi -->
+          <div class="col-sm-6 col-md-3 text-center mb-4">
+            <div class="team-member">
+              <div class="member-img mb-3">
+                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/mem4-1.jpg"
+                     alt="Devi"
+                     class="img-fluid rounded-circle">
+              </div>
+              <h4 class="member-name">Devi</h4>
+              <p class="member-role">HR &amp; Finance</p>
+            </div>
+          </div>
+          <!-- Tamil Selvi -->
+          <div class="col-sm-6 col-md-3 text-center mb-4">
+            <div class="team-member">
+              <div class="member-img mb-3">
+                <img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/mem5-1.jpg"
+                     alt="Tamil Selvi"
+                     class="img-fluid rounded-circle">
+              </div>
+              <h4 class="member-name">Tamil Selvi</h4>
+              <p class="member-role">HR &amp; Finance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
               
 
   <!-- Footer (unchanged) -->
@@ -361,16 +385,16 @@
             <div class="site-footer-two__top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="col-md-2 mb-5 text-center text-md-left wow fadeInUp" data-wow-delay="100ms">
                             <div class="site-footer-two__about">
                                 <div class="site-footer-two__logo">
-                                    <a href="index.html"><img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/Kgelogo.png" alt=""></a>
+                                    <a href="index.html"><img src="https://raw.githubusercontent.com/kgetechnologies/kgesitecdn/kgetechnologies-com/images/Kgelogo.png" alt="KGE Technologies Logo" class="img-fluid"></a>
                                 </div>
                                 <ul class="list-unstyled site-footer-two__contact-list">
                                 
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="col-xl-2 col-lg-6 col-md-6 mb-5 fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget-two__quick-links">
                                 <h4 class="footer-widget-two__title">Services</h4>
                                 <ul class="footer-widget-two__quick-links-list list-unstyled">
@@ -384,7 +408,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-5 fadeInUp" data-wow-delay="300ms">
                             <div class="footer-widget-two__support">
                                 <h4 class="footer-widget-two__title">Marketing</h4>
                                 <ul class="footer-widget-two__quick-links-list list-unstyled">
@@ -399,7 +423,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="col-xl-3 col-lg-6 col-md-6 mb-5 fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget-two__services">
                                 <h4 class="footer-widget-two__title">Development</h4>
                                 <ul class="footer-widget-two__quick-links-list list-unstyled">
@@ -410,7 +434,8 @@
                                   
                                 </ul>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 mb-5 wow fadeInUp" data-wow-delay="500ms">
                             <div class="footer-widget-two__services">
                                 <h4 class="footer-widget-two__title">Internship</h4>
                                 <ul class="footer-widget-two__quick-links-list list-unstyled">
@@ -425,7 +450,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="site-footer-two__bottom">
@@ -441,10 +466,10 @@
                                 <div class="site-footer-two__social-box">
                                     <h4 class="site-footer-two__social-title">Follow Us:</h4>
                                     <div class="site-footer-two__social-box-inner">
-                                        <a href="about.html#"><span class="icon-facebook"></span></a>
-                                        <a href="about.html#"><span class="icon-dribble"></span></a>
+                                        <a href="https://www.facebook.com/KgeTechnologies"><span class="icon-facebook"></span></a>
+                                        <a href="https://www.instagram.com/kgetechnologies"><span class="icon-dribble"></span></a>
 
-                                        <a href="about.html#"><span class="icon-linkedin"></span></a>
+                                        <a href="https://www.linkedin.com/company/kge-technologies"><span class="icon-linkedin"></span></a>
                                     </div>
                                 </div>
                             </div>

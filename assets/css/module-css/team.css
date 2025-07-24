@@ -343,37 +343,58 @@
 /*--------------------------------------------------------------
 # Team Two
 --------------------------------------------------------------*/
-.team-two {
-    position: relative;
-    display: block;
-    background-color: var(--techguru-black);
-    padding: 140px 0;
-    overflow: hidden;
-    z-index: 1;
+
+   .team-two {
+  position: relative;
+  background-color: var(--techguru-black);
+  padding: 80px 0;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
 }
 
 .team-two::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(var(--techguru-white-rgb), 0.05);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--techguru-white-rgb), 0.05);
+  z-index: -1;
 }
 
+/* Floating background shape */
 .team-two__bg-shape {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-    height: 491px;
-    opacity: .20;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    z-index: -1;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;     /* stretch wider so it covers full width */
+  height: 500px;
+  opacity: .2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  z-index: -1;
+}.team-two .section-tagline {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5CB0E9;
+  margin-bottom: 0.5rem;
+}
+.team-two .section-heading {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.team-two .section-subtitle {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+}
+.team-two .row > [class*="col-"] {
+  margin-bottom: 2rem;
 }
 
 .team-two__shape-1 {
@@ -940,13 +961,19 @@
 .member-img {
   width: 140px;
   height: 140px;
+  margin: 0 auto 1rem;
   overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.1);
+  background: #222;
 }
 .member-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
+
 
 /* Typography and spacing */
 .section-tagline {
@@ -957,21 +984,22 @@
 }
 .member-name {
   font-size: 1.25rem;
-  margin-bottom: .25rem;
   font-weight: 600;
+  margin-bottom: .25rem;
 }
 .member-role {
-  color: #6c757d;
   font-size: .95rem;
+  color: #aaa;
 }
 
 /* Optional hover lift */
 .team-member {
+  text-align: center;
   transition: transform .3s, box-shadow .3s;
 }
 .team-member:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 .professional-team {
   height: 350px;           /* adjust height as needed */
@@ -1016,8 +1044,62 @@
   font-size: 1.1rem;
   opacity: .9;
 }
+@media (max-width: 767px) {
+  .team-two .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }}
+.footer-logo img {
+  max-width: 160px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .footer-logo img {
+    margin: 0; /* remove auto on desktop so it aligns left in its column */
+  }
+}
+/* Footer headings */
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
 
+/* Footer links */
+.footer-links li {
+  margin-bottom: .5rem;
+}
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
 
+/* Footer social icons */
+.footer-social a {
+  color: #ccc;
+  font-size: 1.25rem;
+  transition: color .2s;
+}
+.footer-social a:hover {
+  color: #fff;
+}
+
+/* Footer bottom */
+.site-footer {
+  position: relative;
+  z-index: 1;
+}
+.footer-bottom {
+  font-size: .875rem;
+  color: #777;
+}
 
 
 
