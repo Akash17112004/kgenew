@@ -2745,6 +2745,27 @@ ul {
 .site-header--brand .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+/* Force 4‑across on XL/LG/MD, 2‑across on SM for footer widgets */
+.footer-widget-two .row > div[class*="col-"] {
+  /* these flex values mirror Bootstrap’s col classes */
+  flex: 0 0 auto;
+  width: 25%; /* col-xl-3 */
+}
+@media (max-width: 991.98px) {  /* below LG */
+  .footer-widget-two .row > div[class*="col-"] {
+    width: 25%; /* col-md-3 stays 25% */
+  }
+}
+@media (max-width: 767.98px) {  /* below MD */
+  .footer-widget-two .row > div[class*="col-"] {
+    width: 50%; /* col-sm-6 becomes 50% */
+  }
+}
+@media (max-width: 575.98px) {  /* XS */
+  .footer-widget-two .row > div[class*="col-"] {
+    width: 100%; /* full width */
+  }
+}
 
 
 
