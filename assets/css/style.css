@@ -1817,7 +1817,7 @@ ul {
 .main-menu-two__top {
   position: relative;
   display: block;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main-menu-two__top:before {
