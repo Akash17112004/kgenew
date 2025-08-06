@@ -700,6 +700,7 @@
     overflow: hidden;
     background-color: var(--techguru-black);
     z-index: 1;
+    align-items: center;
 }
 
 .site-footer-two:before {
@@ -764,12 +765,18 @@
     padding: 45px 48px 43px;
     background-color: rgba(var(--techguru-white-rgb), .10);
     border-radius: 40px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .site-footer-two__logo {
     position: relative;
-    display: block;
+    display: flex;
     margin-bottom: 78px;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    
 }
 
 .site-footer-two__contact-list {
