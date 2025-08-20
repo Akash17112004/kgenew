@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Search Toggle Test</title>
+<style>
+  .main-menu-two__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #222;
+  }
+  .main-menu-two__search-box {
+    display: flex;
+    align-items: center;
+  }
+  .main-menu-two__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #aaa;
+    border-radius: 14px;
+    font-size: 20px;
+    color: white;
+    background: #444;
+    cursor: pointer;
+  }
+  .main-menu-two__search-input {
+    width: 0;
+    opacity: 0;
+    margin-left: 10px;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-radius: 14px;
+    font-size: 16px;
+    transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    outline: none;
+  }
+  .main-menu-two__search-input.active {
+    width: 200px;
+    opacity: 1;
+    padding: 8px 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="main-menu-two__right">
+    <div class="main-menu-two__search-box">
+      <a href="javascript:void(0);" class="main-menu-two__search searcher-toggler-box" aria-label="Toggle search">&#128269;</a>
+      <input type="text" class="main-menu-two__search-input" placeholder="Search..." aria-label="Search input" />
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchToggle = document.querySelector('.searcher-toggler-box');
+      const searchInput = document.querySelector('.main-menu-two__search-input');
+
+      searchToggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+          searchInput.focus();
+        } else {
+          searchInput.value = '';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

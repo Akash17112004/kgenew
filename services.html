@@ -194,10 +194,38 @@ Offshore: Guduvancherry, Chennai, India.</p>
 </ul>
                 </div>
                 <div class="main-menu-two__right">
-                    <div class="main-menu-two__search-box">
-                        <a href="about.html#"
-                            class="main-menu-two__search searcher-toggler-box icon-search-interface-symbol"></a>
-                    </div>
+                    <!-- START header search container -->
+<div class="main-menu-two__search-box" style="display:flex; align-items:center;">
+  <a href="javascript:void(0);" class="main-menu-two__search searcher-toggler-box icon-search-interface-symbol" aria-label="Toggle search" style="display:flex; align-items:center; justify-content:center; height:50px; width:50px; border:1px solid #ccc; border-radius:14px; font-size:20px; color:#000; cursor:pointer;">
+    &#128269; <!-- Unicode magnifying glass icon fallback -->
+  </a>
+  <input type="text" class="main-menu-two__search-input" placeholder="Search..." aria-label="Search input" style="width:0; opacity:0; margin-left:10px; padding:0; border:1px solid #ccc; border-radius:14px; font-size:16px; transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease; outline:none;" />
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchToggle = document.querySelector('.searcher-toggler-box');
+    const searchInput = document.querySelector('.main-menu-two__search-input');
+
+    searchToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (searchInput.classList.contains('active')) {
+        searchInput.classList.remove('active');
+        searchInput.value = '';
+        searchInput.style.width = '0';
+        searchInput.style.opacity = '0';
+        searchInput.style.padding = '0';
+      } else {
+        searchInput.classList.add('active');
+        searchInput.style.width = '200px';
+        searchInput.style.opacity = '1';
+        searchInput.style.padding = '8px 12px';
+        searchInput.focus();
+      }
+    });
+  });
+</script>
+
                     <div class="main-menu-two__btn-box">
                         <a href="contact.html" class="thm-btn">Get in Touch<span
                                 class="icon-right-arrow"></span></a>

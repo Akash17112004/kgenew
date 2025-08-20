@@ -2768,6 +2768,56 @@ ul {
     width: 100%; /* full width */
   }
 }
+.main-menu-two__search-box {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu-two__search-input {
+  width: 0;
+  opacity: 1;
+  margin-left: 10px;
+  padding: 0;
+  border: 1px solid var(--techguru-gray, #ccc);
+  border-radius: 14px;
+  font-size: 16px;
+  transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  outline: none;
+}
+
+.main-menu-two__search-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 8px 12px;
+}
+@media (min-width: 768px) {
+  .main-menu-two__search-input.active {
+    display: block;
+    width: 200px;
+    opacity: 1;
+    padding: 8px 12px;
+  }
+}
+/* Force search input visible and expanded when active on all screen widths */
+.main-menu-two__search-input.active {
+  display: block !important;
+  width: 200px !important;
+  opacity: 1 !important;
+  padding: 8px 12px !important;
+  margin-left: 10px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 14px !important;
+  position: relative !important;
+  z-index: 10000 !important;
+  background: white !important;
+  color: black !important;
+  transition: none !important; /* Disable any transitions that might interfere */
+}
+.main-menu-two__search-box, .main-menu-two__right {
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 10001 !important;
+}
 
 
 
