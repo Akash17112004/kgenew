@@ -2768,22 +2768,8 @@ ul {
     width: 100%; /* full width */
   }
 }
-.main-menu-two__search-box {
-  display: flex;
-  align-items: center;
-}
 
-.main-menu-two__search-input {
-  width: 0;
-  opacity: 1;
-  margin-left: 10px;
-  padding: 0;
-  border: 1px solid var(--techguru-gray, #ccc);
-  border-radius: 14px;
-  font-size: 16px;
-  transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
-  outline: none;
-}
+
 
 .main-menu-two__search-input.active {
   width: 200px;
@@ -2799,27 +2785,166 @@ ul {
   }
 }
 /* Force search input visible and expanded when active on all screen widths */
-.main-menu-two__search-input.active {
-  display: block !important;
-  width: 200px !important;
-  opacity: 1 !important;
-  padding: 8px 12px !important;
-  margin-left: 10px !important;
-  border: 1px solid #ccc !important;
-  border-radius: 14px !important;
-  position: relative !important;
-  z-index: 10000 !important;
-  background: white !important;
-  color: black !important;
-  transition: none !important; /* Disable any transitions that might interfere */
-}
+
 .main-menu-two__search-box, .main-menu-two__right {
   overflow: visible !important;
   position: relative !important;
   z-index: 10001 !important;
 }
+.main-menu-two__search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adjust as necessary */
+}
+
+.main-menu-two__search-input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.4s, opacity 0.4s, padding 0.4s;
+  border-radius: 14px;
+  padding: 0;
+  border: 1px solid #ccc;
+  background: #fff;
+  position: static; /* Remove absolute */
+  margin-left: 10px;
+  font-size: 16px;
+}
 
 
+
+.main-menu-two__search-box {
+  position: relative;
+  z-index: 2000;
+}
+
+.main-menu-two__search-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 8px 12px;
+  position: relative;
+  z-index: 2100;
+  background: #fff;
+  color: #000;
+}
+header, nav, .main-menu-two__right {
+  overflow: visible;
+}
+.main-menu-two__search-box {
+  position: relative;
+  z-index: 2000;
+}
+
+.main-menu-two__search-input.active {
+  position: relative; /* or absolute, if needed for your header design */
+  z-index: 2100;
+  background: #fff;
+  color: #000;
+}
+.main-menu-two__search-box {
+  position: relative;
+  z-index: 10000;
+}
+.main-menu-two__right,
+.main-menu-two__wrapper-inner,
+.main-header-two,
+nav.main-menu-two {
+  overflow: visible;
+}
+.main-menu-two__search-box {
+  margin-left: 20px;
+}
+
+.main-menu-two__search-box {
+  position: relative; /* anchor for absolute positioning */
+}
+
+/* Make input overlay other elements and not shift nav */
+.main-menu-two__search-input {
+  position: absolute;
+  top: 50%;
+  left: 50px; /* adjust so input aligns after the search icon */
+  transform: translateY(-50%);
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+  transition: width 0.4s, opacity 0.4s, padding 0.4s;
+  z-index: 2100;
+  pointer-events: none;
+}
+
+.main-menu-two__search-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 8px 12px;
+  pointer-events: auto;
+}
+
+.main-menu-two__search-box {
+  position: relative;
+  z-index: 99999; /* Large number to ensure on top */
+}
+
+/* For the expanding search input */
+.main-menu-two__search-input {
+  position: absolute;                   /* Pull out of document flow, overlays header */
+  top: 50%;                             /* Adjust as needed for vertical alignment */
+  left: 50px;                           /* Adjust so it appears just to the right of the icon */
+  transform: translateY(-50%);
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 16px;
+  z-index: 11000;                       /* Even higher for the input itself */
+  transition: width 0.4s, opacity 0.4s, padding 0.4s;
+  pointer-events: none;
+}
+
+.main-menu-two__search-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 8px 12px;
+  pointer-events: auto;
+}
+.main-menu-two__search-box {
+  position: relative; /* or absolute/fixed if needed */
+  z-index: 1100; /* higher than both headers */
+}
+
+.main-menu-two__search-input {
+  position: absolute; /* or fixed */
+  z-index: 1200; /* must be higher to appear above header */
+  /* positioning */
+  top: 50%; 
+  left: 50px; /* adjust to be near search icon */
+  transform: translateY(-50%);
+  
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+
+.main-menu-two__search-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 8px 12px;
+  pointer-events: auto;
+}
 
 
 

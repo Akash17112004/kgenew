@@ -193,14 +193,29 @@ Offshore: Guduvancherry, Chennai, India.</p>
     
 </ul>
                 </div>
-                <div class="main-menu-two__right">
-                    <!-- START header search container -->
-<div class="main-menu-two__search-box" style="display:flex; align-items:center;">
-  <a href="javascript:void(0);" class="main-menu-two__search searcher-toggler-box icon-search-interface-symbol" aria-label="Toggle search" style="display:flex; align-items:center; justify-content:center; height:50px; width:50px; border:1px solid #ccc; border-radius:14px; font-size:20px; color:#000; cursor:pointer;">
-    &#128269; <!-- Unicode magnifying glass icon fallback -->
-  </a>
-  <input type="text" class="main-menu-two__search-input" placeholder="Search..." aria-label="Search input" style="width:0; opacity:0; margin-left:10px; padding:0; border:1px solid #ccc; border-radius:14px; font-size:16px; transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease; outline:none;" />
-</div>
+                <!-- Header code -->
+<div class="main-menu-two__right" style="position: relative;">
+  <a href="javascript:void(0);" class="searcher-toggler-box main-menu-two__search icon-search-interface-symbol" aria-label="Toggle search" style="width:50px; height:50px; display:flex; align-items:center; justify-content:center; border:1px solid #ccc; border-radius:14px; cursor:pointer; color:#f1eded;"></a>
+
+
+<!-- Outside the nav/ flex container, ideally right after header -->
+<input type="text" id="floating-search-input" placeholder="Search..." aria-label="Search input" style="
+  position: fixed;
+  top: 15px;  /* Adjust based on your header height */
+  right: 80px; /* Align near search icon */
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 16px;
+  transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+  background: white;
+  color: black;
+  z-index: 9999;
+  pointer-events: none;
+">
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
